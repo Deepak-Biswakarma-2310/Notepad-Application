@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notepad Application</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-container">
+        <h1>Add Notes</h1>
+        <div class="add-note-container">
+          <input type="text" id="title" placeholder="Title" />
+          <textarea
+            name="note"
+            id="note"
+            placeholder="Write your note here..."
+            cols="55"
+            rows="6"
+          ></textarea>
+          <button class="add-note-button">Add Note</button>
+        </div>
+        <h2>My Notes</h2>
+        <div class="my-notes-container">
+          <ul id="my-notes-list">
+            <!-- <li class="my-note">
+              <p>Math function</p>
+              <span class="material-symbols-outlined"> delete </span>
+            </li> -->
+          </ul>
+          <button class="save-notes-button">Save Notes</button>
+        </div>
+      </div>
+      <div class="right-container">
+        <h1>Note Preview</h1>
+        <textarea
+          name="note-content"
+          id="noteContent"
+          placeholder="Your note will appear here..."
+          cols="60" 
+          rows="25"
+        ></textarea>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
